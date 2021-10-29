@@ -1,7 +1,4 @@
 pragma solidity ^0.8.0;
-// Name: Hafiz Sayyed Ali Hamdani
-//Roll No: PIAIC68636
-// BCC Assignment 3
 interface IERC20{
     function totalSupply() external view returns(uint256);
     function balanceOf(address account) external view returns(uint256);
@@ -40,8 +37,7 @@ contract Assignment_Token is IERC20{
         
         emit Transfer(address(this),owner,_totalSupply);
     }
-    // 1 ether=100 token
-    // 1 wei=100 Token smalest unit
+    // 1 wei=100 Token 
     uint256 public wei_equals=100;
     
     
@@ -116,6 +112,4 @@ contract Assignment_Token is IERC20{
            
        }
 }
-// Name: Hafiz Sayyed Ali Hamdani
-//Roll No: PIAIC68636
-// BCC Assignment 3
+ 
